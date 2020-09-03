@@ -1,0 +1,19 @@
+{
+  "name": "turing-labenu-system8",
+  "version": "1.0.0",
+  "description": "projeto backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future4code/turing-labenu-system8.git"
+  },
+  "author": "Guilherme Paiva, Leonardo Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future4code/turing-labenu-system8/issues"
+  },
+  "homepage": "https://github.com/future4code/turing-labenu-system8#readme"
+}
