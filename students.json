@@ -1,1 +1,18 @@
-[]
+{
+  "arrayEstudantes": [
+    {
+      "id": "aluno teste1",
+      "nome": "gui",
+      "email": "gui@gmail.com",
+      "dataNascimento": "16/08/1991",
+      "hobbies": "jogar videogame"
+    },
+    {
+      "id": "aluno teste2",
+      "nome": "leo estudante",
+      "email": "leo@gmail.com",
+      "dataNascimento": "16/08/1991",
+      "hobbies": "dormir"
+    }
+  ]
+}
