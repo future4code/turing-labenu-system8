@@ -1,1 +1,57 @@
-[]
+{
+  "arrayTurmas": [
+    {
+      "id": "teste3",
+      "nome": "turma teste",
+      "dataInicio": "05/05/2005",
+      "dataTermino": "06/06/2005",
+      "listaProfessores": [
+        {
+          "id": "professor teste3",
+          "nome": "leo",
+          "email": "leo@gmail.com",
+          "dataNascimento": "01/01/2001",
+          "especialidades": [
+            "REACT"
+          ]
+        }
+      ],
+      "listaAlunos": [
+        {
+          "id": "aluno teste1",
+          "nome": "gui",
+          "email": "gui@gmail.com",
+          "dataNascimento": "16/08/1991",
+          "hobbies": "jogar videogame"
+        }
+      ]
+    },
+    {
+      "id": "teste4",
+      "nome": "turma teste noite",
+      "dataInicio": "07/07/2005",
+      "dataTermino": "08/08/2005",
+      "listaProfessores": [
+        {
+          "id": "professor teste3",
+          "nome": "leo",
+          "email": "leo@gmail.com",
+          "dataNascimento": "01/01/2001",
+          "especialidades": [
+            "REACT"
+          ]
+        }
+      ],
+      "listaAlunos": [
+        {
+          "id": "aluno teste1",
+          "nome": "gui",
+          "email": "gui@gmail.com",
+          "dataNascimento": "16/08/1991",
+          "hobbies": "jogar videogame"
+        }
+      ],
+      "moduloAtual": 3
+    }
+  ]
+}

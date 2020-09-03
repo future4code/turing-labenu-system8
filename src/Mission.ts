@@ -3,14 +3,30 @@ import {Student} from './Student'
 
 export abstract class Mission {
   constructor (
-    private id: string,
-    private nome: string,
-    private dataInicio: string,
-    private dataTermino: string,
-    private listaProfessores: Teacher[] = [],
-    private listaAlunos: Student[] = [],
-    private moduloAtual?: number
+    protected id: string,
+    protected nome: string,
+    protected dataInicio: string,
+    protected dataTermino: string,
+    protected listaProfessores: Teacher[] = [],
+    protected listaAlunos: Student[] = [],
+    protected moduloAtual?: number
   ) {}
+
+  public setListaAlunos(aluno: Student) {
+    this.listaAlunos.push(aluno)
+  }
+
+  public getListaAlunos(): Student[]{
+    return this.listaAlunos
+  }
+
+  public setListaProfessores(professor: Teacher) {
+    this.listaProfessores.push(professor)
+  }
+
+  public getListaProfessores(): Teacher[]{
+    return this.listaProfessores
+  }
 
   public getId(): string {
     return this.id
