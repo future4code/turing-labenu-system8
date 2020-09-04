@@ -10,8 +10,8 @@ const testeStudent: Student = new Student("aluno teste1", "gui", "gui@gmail.com"
 const testeStudent2: Student = new Student("aluno teste2", "leo estudante", "leo@gmail.com", "16/08/1991", "dormir")
 const testeTeacher: Teacher = new Teacher("professor teste3", "leo", "leo@gmail.com", "01/01/2001", [TEACHER_SPECIALTY.REACT])
 const testeTeacher2: Teacher = new Teacher("professor teste4", "gui", "gui@gmail.com", "16/08/1991", [TEACHER_SPECIALTY.TESTES])
-const testeFullTime: FullTimeMission = new FullTimeMission("teste3", "turma teste", "05/05/2005", "06/06/2005", [testeTeacher], [testeStudent], )
-const testeNightTime: NightTimeMission = new NightTimeMission("teste4", "turma teste noite", "07/07/2005", "08/08/2005", [testeTeacher], [testeStudent], 3)
+const testeFullTime: FullTimeMission = new FullTimeMission("teste3", "turma teste", "05/05/2005", "06/06/2005", [], [], )
+const testeNightTime: NightTimeMission = new NightTimeMission("teste4", "turma teste noite", "07/07/2005", "08/08/2005", [], [], 3)
 
 // console.log(testeStudent, testeTeacher, testeFullTime, testeNightTime)
 
@@ -62,4 +62,4 @@ console.log("------------------------------------------------------- Adicionando
 
 testeNightTime.setListaAlunos(testeStudent)
 
-console.log(testeNightTime)
+console.log(testeNightTime.getListaAlunos())

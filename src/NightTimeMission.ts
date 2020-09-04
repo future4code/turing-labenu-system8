@@ -17,7 +17,6 @@ export class NightTimeMission extends Mission {
 
   public setListaAlunos(aluno: Student) {
     super.setListaAlunos(aluno)
-    this.listaAlunos.push(aluno)
   }
 
   public getListaAlunos(): Student[]{
@@ -27,7 +26,6 @@ export class NightTimeMission extends Mission {
 
   public setListaProfessores(professor: Teacher) {
     super.setListaProfessores(professor)
-    this.listaProfessores.push(professor)
   }
 
   public getListaProfessores(): Teacher[]{
