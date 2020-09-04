@@ -2,6 +2,7 @@ import {Teacher} from './Teacher'
 import {Student} from './Student'
 
 export abstract class Mission {
+  
   constructor (
     protected id: string,
     protected nome: string,
@@ -46,5 +47,9 @@ export abstract class Mission {
 
   public getModuloAtual(): number | undefined {
     return this.moduloAtual
+  }
+
+  public setName(name: string) {
+    this.nome = name;
   }
 }

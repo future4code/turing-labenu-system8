@@ -2,7 +2,7 @@
   "arrayTurmas": [
     {
       "id": "teste3",
-      "nome": "turma teste",
+      "nome": "",
       "dataInicio": "05/05/2005",
       "dataTermino": "06/06/2005",
       "listaProfessores": [
@@ -29,7 +29,7 @@
     },
     {
       "id": "teste4",
-      "nome": "turma teste noite",
+      "nome": "nao-na-night",
       "dataInicio": "07/07/2005",
       "dataTermino": "08/08/2005",
       "listaProfessores": [
