@@ -93,7 +93,7 @@ fm.writeFile({
   arrayTurmas
 })
 
-console.log("------------------------------------------------------- Pegando idade do estudante pelo id")
+console.log("------------------------------------------------------- Pegando idade do estudante pelo idd")
 
 const alunoEncontrado = arrayEstudantes.find((aluno) => {
   return aluno.id === "aluno teste2"
