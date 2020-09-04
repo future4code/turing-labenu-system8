@@ -17,6 +17,24 @@
       "especialidades": [
         "TESTES"
       ]
+    },
+    {
+      "id": "professor teste1",
+      "nome": "leo2",
+      "email": "leo2@gmail.com",
+      "dataNascimento": "01/01/2002",
+      "especialidades": [
+        "BACKEND"
+      ]
+    },
+    {
+      "id": "professor teste2",
+      "nome": "gui2",
+      "email": "gui2@gmail.com",
+      "dataNascimento": "16/08/1992",
+      "especialidades": [
+        "OOP"
+      ]
     }
   ]
 }

@@ -1,4 +1,5 @@
 import {User} from './User'
+import moment from 'moment'
 
 export class Student implements User {
   constructor (
@@ -8,4 +9,5 @@ export class Student implements User {
     public dataNascimento: string,
     public hobbies: string
   ) {}
+
 }

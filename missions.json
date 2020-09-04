@@ -5,7 +5,26 @@
       "nome": "turma teste",
       "dataInicio": "05/05/2005",
       "dataTermino": "06/06/2005",
-      "listaProfessores": [],
+      "listaProfessores": [
+        {
+          "id": "professor teste3",
+          "nome": "leo",
+          "email": "leo@gmail.com",
+          "dataNascimento": "01/01/2001",
+          "especialidades": [
+            "REACT"
+          ]
+        },
+        {
+          "id": "professor teste2",
+          "nome": "gui2",
+          "email": "gui2@gmail.com",
+          "dataNascimento": "16/08/1992",
+          "especialidades": [
+            "OOP"
+          ]
+        }
+      ],
       "listaAlunos": []
     },
     {
@@ -13,8 +32,42 @@
       "nome": "turma teste noite",
       "dataInicio": "07/07/2005",
       "dataTermino": "08/08/2005",
-      "listaProfessores": [],
-      "listaAlunos": [],
+      "listaProfessores": [
+        {
+          "id": "professor teste4",
+          "nome": "gui",
+          "email": "gui@gmail.com",
+          "dataNascimento": "16/08/1991",
+          "especialidades": [
+            "TESTES"
+          ]
+        },
+        {
+          "id": "professor teste1",
+          "nome": "leo2",
+          "email": "leo2@gmail.com",
+          "dataNascimento": "01/01/2002",
+          "especialidades": [
+            "BACKEND"
+          ]
+        }
+      ],
+      "listaAlunos": [
+        {
+          "id": "aluno teste1",
+          "nome": "gui",
+          "email": "gui@gmail.com",
+          "dataNascimento": "16/08/1991",
+          "hobbies": "jogar videogame"
+        },
+        {
+          "id": "aluno teste2",
+          "nome": "leo estudante",
+          "email": "leo@gmail.com",
+          "dataNascimento": "25/01/1984",
+          "hobbies": "dormir"
+        }
+      ],
       "moduloAtual": 3
     }
   ]
