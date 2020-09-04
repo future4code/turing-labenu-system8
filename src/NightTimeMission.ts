@@ -32,4 +32,12 @@ export class NightTimeMission extends Mission {
     super.getListaProfessores()
     return this.listaProfessores
   }
+
+  public setName(name: string) {
+    if (name.indexOf("-na-night") !== -1) {
+      super.setName(name);
+    } else {
+      console.log("Erro")
+    }
+  }
 }
