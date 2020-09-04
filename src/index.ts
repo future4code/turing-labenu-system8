@@ -5,11 +5,14 @@ import {FullTimeMission} from './FullTimeMission'
 import {NightTimeMission} from './NightTimeMission'
 import {FileManager} from './FileManager'
 import { Mission } from './Mission'
+import moment from 'moment'
 
 const testeStudent: Student = new Student("aluno teste1", "gui", "gui@gmail.com", "16/08/1991", "jogar videogame")
-const testeStudent2: Student = new Student("aluno teste2", "leo estudante", "leo@gmail.com", "16/08/1991", "dormir")
+const testeStudent2: Student = new Student("aluno teste2", "leo estudante", "leo@gmail.com", "25/01/1984", "dormir")
 const testeTeacher: Teacher = new Teacher("professor teste3", "leo", "leo@gmail.com", "01/01/2001", [TEACHER_SPECIALTY.REACT])
 const testeTeacher2: Teacher = new Teacher("professor teste4", "gui", "gui@gmail.com", "16/08/1991", [TEACHER_SPECIALTY.TESTES])
+const testeTeacher3: Teacher = new Teacher("professor teste1", "leo2", "leo2@gmail.com", "01/01/2002", [TEACHER_SPECIALTY.BACKEND])
+const testeTeacher4: Teacher = new Teacher("professor teste2", "gui2", "gui2@gmail.com", "16/08/1992", [TEACHER_SPECIALTY.OOP])
 const testeFullTime: FullTimeMission = new FullTimeMission("teste3", "turma teste", "05/05/2005", "06/06/2005", [], [], )
 const testeNightTime: NightTimeMission = new NightTimeMission("teste4", "turma teste noite", "07/07/2005", "08/08/2005", [], [], 3)
 
@@ -28,13 +31,11 @@ fm.writeFile({
 
 const estudantes = fm.readFile();
 
-console.log(estudantes)
-
 console.log("------------------------------------------------------- Professores")
 fm.setFilePath("../turing-labenu-system8/teachers.json");
 
 const arrayProfessores: Teacher[] =[]
-arrayProfessores.push(testeTeacher, testeTeacher2);
+arrayProfessores.push(testeTeacher, testeTeacher2, testeTeacher3, testeTeacher4);
 
 fm.writeFile({
   arrayProfessores
@@ -42,9 +43,7 @@ fm.writeFile({
 
 const professores = fm.readFile();
 
-console.log(professores)
-
-console.log("------------------------------------------------------- Criando turma")
+console.log("------------------------------------------------------- Turmas")
 fm.setFilePath("../turing-labenu-system8/missions.json");
 
 const arrayTurmas: Mission[] = []
@@ -56,10 +55,50 @@ fm.writeFile({
 
 const turmas = fm.readFile();
 
-console.log(turmas)
-
 console.log("------------------------------------------------------- Adicionando estudante na turma")
 
-testeNightTime.setListaAlunos(testeStudent)
+const alunosNoite = testeNightTime.getListaAlunos()
 
-console.log(testeNightTime.getListaAlunos())
+alunosNoite.push(testeStudent)
+
+fm.writeFile({
+  arrayTurmas
+})
+
+alunosNoite.push(testeStudent2)
+
+fm.writeFile({
+  arrayTurmas
+})
+
+console.log("------------------------------------------------------- Adicionando professor na turma")
+
+const professoresFull = testeFullTime.getListaProfessores()
+
+professoresFull.push(testeTeacher, testeTeacher4)
+
+fm.writeFile({
+  arrayTurmas
+})
+
+const professoresNoite = testeNightTime.getListaProfessores()
+
+professoresNoite.push(testeTeacher2, testeTeacher3)
+
+fm.writeFile({
+  arrayTurmas
+})
+
+console.log("------------------------------------------------------- Pegando idade do estudante pelo id")
+
+const alunoEncontrado = arrayEstudantes.find((aluno) => {
+  return aluno.id === "aluno teste2"
+})
+
+const data1 = moment(`${alunoEncontrado?.dataNascimento}`, "DD/MM/YYYY")
+const data2 = moment()
+
+const diff = data2.diff(data1, "years")
+
+console.log("O estudante tem", diff, "anos")
+  
